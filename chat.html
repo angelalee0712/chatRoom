@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="CSS/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #container {
+            height: 700px;
+            width: 100%;
+            margin: auto;
+        }
+        #left {
+            position: relative;
+            top:-80px;
+            float: left;
+            height: 700px;
+            width: 400px;
+
+        }
+
+        #right {
+            position: relative;
+            top:-80px;
+	    left:-50px;
+           float: right;
+            height: 700px;
+            width: 800px;
+            /*margin: auto 0px auto 0px;*/
+
+        }
+        #left_non1 {
+            height: 100px;
+            width: 400px;
+        }
+        #left_in {
+            height: 600px;
+            width: 400px;
+
+        }
+        #left1 {
+            height: 50px;
+            width: 300px;
+        }
+        #left2 {
+            height: 50px;
+            width: 300px;
+            overflow: auto;
+        }
+        #left3 {
+            height: 500px;
+            width: 300px;
+        }
+        #right_non1 {
+            height: 100px;
+            width: 800px;
+        }
+        #right_in {
+            height: 600px;
+            width: 800px;
+        }
+         #right_con{
+            height: 600px;
+            width: 800px;
+            /*padding: 0px 50px;*/
+        }
+        #right1 {
+            height: 50px;
+            width: 800px;
+            /*width: 1000px*/
+        }
+        #right2 {
+            height: 500px;
+            width: 800px;
+            overflow: auto;
+        }
+        #right3 {
+            height: 50px;
+            width: 800px;
+        }
+
+        #fasong{
+            overflow: auto;
+        }
+        #left_con {
+            height: 600px;
+            width: 300px;
+            padding: 0px 50px;
+        }
+
+
+        /*顶层的CSS样式*/
+        #top_zong {
+            height: 100px;
+            width: 100%;
+        }
+        #top_lg {
+            float: left;
+            height: 100px;
+            width: 400px;
+        }
+        #top_right {
+            float: right;
+            height: 100px;
+            width: 600px;
+            margin: 50px 0px 0px 0px;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="biankuang" id="top_zong">
+    <div  id="top_lg"><img src="images/Micro-chat2.gif" alt="" name="joas" width="400" height="100" id="joas" /></div>
+    <div id="top_right">
+
+
+                <table width="100%" border="0">
+                    <tr>
+                        <td style="font-family: clover typeface;font-size: 30px">欢迎进入聊天室！！</td>
+
+
+                        <td id="usernum" style="font-family: clover typeface;font-size: 15px"></td>
+                        <td>
+                            <button id="logout" class="btn btn-primary">注销</button>
+                        </td>
+
+                    </tr>
+                </table>
+
+    </div>
+</div>
+
+
+<div id="container" style="background-image: url(images/bg.jpg);">
+    <div id="left">
+        <div id="left_non1"></div>
+        <div id="left_in">
+
+            <div id="left_con">
+                <div id="left1" style="background-image: url(images/lg.gif);color: #ffffff;text-align: center"><br/>联&nbsp;系&nbsp;人</div>
+                <div id="left2" style="background: #adadad;color: #ffffff;text-align: center"><br/>当&nbsp;前&nbsp;在&nbsp;线&nbsp;人&nbsp;员</div>
+                <div id="left3" style="background: #ffffff"></div>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="right_non1"></div>
+        <div id="right_in">
+            <div id="right_con">
+                <div id="right1" style="background-image: url(images/lg.gif);color: #ffffff;text-align: center"><br/>群&nbsp;名&nbsp;称</div>
+                <div id="right2" style="background-image: url(images/bgchat.gif);font-size: 30px">
+                    说起来也是好笑，在北京卫视、浙江卫视播出的《北上广不相信眼泪》，最大的看点不是“一线城市压力大”之类的社会话题，而是马伊琍和朱亚文爆出荧幕的荷尔蒙。
+
+                    好事的观众挨个数两位主角的啪啪次数，才播出了4集就啪了8次，更有办公室里大战的刺激戏码。无怪乎八卦爱好者生出了疑心：马伊琍尺度搞得这么大，真的不是在报复文章吗？
+
+                    是不是报复我不知道，朱亚文本来就是荧幕直男典范，而39岁的马伊琍真有点猛虎出闸的意思。作为一部职场题材的电视剧，两位男女主角随时随地滚在一起，无论是姿势、地点和频率，都显得有点过分。
+
+                    但这个剧的尺度问题，不只是滚床单而已。
+
+                    在扭曲的价值观这回事上，这部剧的尺度也是令人傻眼。在首集剧中，潘芸（马伊琍 饰演）搞定客户的手段，是陪酒和暗示性贿赂，到最后就是赤裸裸的给回扣。赵小亮（朱亚文 饰演）在得到新工作的面试上，更是直言不讳自己就擅长“脏”。
+
+                    什么是“脏”？简单说就是不择手段。在这部剧里，有一个看似合理，实则歪曲到骇人的价值观：“因为北上广不相信眼泪，所以我们可以不择手段。”
+
+                    在职场上，潘芸和赵小亮都是“脏”的人，他们不守规则也不受约束。潘芸的方式是强取豪夺，她能把客户关在房间灌酒，钱和色贿赂之外，更是放言：“不签合同谁也别想走出房门。”赵小亮最引以为傲的是恶俗营销，他能屡屡击败剧中的香港人，靠的是下手狠、没底线。
+                </div>
+                <script>
+                window.onscroll=function()
+                {
+                if(Math.abs(document.body.clientHeight - document.documentElement.clientHeight +500) <= (document.documentElement.scrollTop || document.body.scrollTop)){
+                showmore();
+                }
+                }
+                </script>
+                <div id="right3" style="background-image: url(images/lg.gif);color: #ffffff;text-align: center">
+
+                    <div id="fasong" class="input-group">
+
+                       <div id="input_content" contenteditable="true" style="float:left;text-align:left;background-color:#ffffff;overflow:auto;outline:none;width: 600px; height: 50px; color: #000000"></div>
+                        <div style="width: 200px;height: 50px;float: right">
+                            <button id="say" class="btn btn-primary" style="width: 50px; height: 50px;">发送</button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button id="delete" class="btn btn-primary" style="width: 80px; height: 50px;">清空聊天</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="javascripts/jquery.min.js"></script>
+<script src="http://sandbox.runjs.cn/js/sandbox/jquery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.cookie.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+    var sayCount=0;//统计发言条数
+    var socket=io.connect('http://127.0.0.1:3000');
+    socket.on('usernum',function(data){
+        $("#usernum").html("当前连接人数:" + data.number);
+    });
+    var from= $.cookie('user');//从cookie中读取用户名，存于变量from
+    socket.emit('online',{user:from});
+    socket.on('online', function (data) {
+       if(data.user!=from){
+           var massage = '<div style="color: red;">系统提醒：' + data.user + ' 上线了！</div>';
+       } else {
+           var massage = '<div style="color: red;">系统提醒：'+ data.user +',欢迎你进入聊天室！现在你可以和大家聊天了！！！</div>';
+       }
+        $("#right2").append(massage+"<br/>");
+        //刷新用户在线列表
+        flushUsers(data.users);
+    });
+    //监听say这个事件，如果有人说话，就将所说内容显示出来
+    socket.on('say', function (data) {
+        //对所有人说
+        $("#right2").append('<div>(' + data.from + '['+data.sayCount+']'+')说道：</div>');
+        $("#right2").append('<div style="color: greenyellow;font-size: large">' + data.msg + '</div><br/>');
+
+    });
+    //如果服务器关闭
+    socket.on('disconnect', function() {
+        var sys = '<div style="color:red;">系统提醒：服务器连接失败（可能服务器已经关闭）！</div>';
+        $("#right2").append(sys + "<br/>");
+        $("#left3").empty();
+        $("#usernum").html("当前连接人数:" + 0);
+    });
+
+    //重新启动服务器
+    socket.on('reconnect', function() {
+        var sys = '<div style="color: red;">系统提醒：重新连接服务器！</div>';
+        $("#right2").append(sys + "<br/>");
+        socket.emit('online', {user: from});
+        //刷新用户在线列表
+        flushUsers(data.users);
+    });
+
+    //监听offline这个事件，如果有人下线，也提示下线消息
+    socket.on('offline',function(data){
+        var sys = '<div style="color:red;">系统提醒：' + data.user + ' 下线了！</div>';
+        $("#right2").append(sys + "<br/>");
+        //刷新用户在线列表
+        flushUsers(data.users);
+    });
+    //编写发送按钮的click事件
+    $("#say").click(function () {
+        var $msg=document.getElementById("input_content").value;
+        sayCount++;
+        if($msg=="")return;
+        $("#right2").append('<div>你['+sayCount+ '] 说：</div>')
+        $("#right2").append('<div style="color: blue;font-size: large">' + $msg + '</div><br/>');
+        //将消息发送给事件say
+        socket.emit('say',{from:from,msg:$msg,sayCount:sayCount});
+        //清空输入框并获得焦点
+        var text="";
+        document.getElementById("input_content").value=text;
+        document.getElementById("input_content").focus();
+        //$("#input_content").html("").focus();
+    });
+    //刷新用户在线列表
+    function flushUsers(users) {
+        //先要将好友列表清空
+        $("#left3").empty();
+        //遍历生成用户在线列表
+
+        for (var i in users) {
+            $("#left3").append('<li alt="' + users[i] + ' onselectstart="return false">' + users[i] + '</li>');
+        }
+    }
+
+</script>
+<script type="text/javascript">
+    $(function(){
+        $("#logout").click(function(){
+            location.href = '/';
+        });
+    });
+</script>
+
+</body>
+</html>

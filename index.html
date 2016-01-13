@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="CSS/flexslider.css"/>
+    <link href="CSS/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <style>
+        .con{
+            float: right;
+        }
+        .con2{
+            width: 100%;
+        }
+        .con3{
+            width: 100%;
+            text-align:center;
+            margin: auto;
+        }
+         .center{
+             text-align: center;
+         }
+        .right{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<br/>
+<div class="con2">
+    <div class="con">
+        <table width="300" border="0">
+            <tr>
+                <td align="center"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">登录</button></td>
+                <td align="center"><a href="regist.html">注册</a></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<br/>
+
+<!--通过模态框显示登录页面-->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">登录微聊账号</h4>
+            </div>
+            <form id="form" name="form" onsubmit="return chkinput(form)" method="post" action="login_chk.php">
+            <div class="modal-content">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">账号</span>
+                    <input id="username" type="text" class="form-control" placeholder="请输入用户名">
+
+                </div>
+                <br/>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">密码</span>
+                    <input id="pass" type="password" class="form-control" placeholder="请输入密码">
+
+                </div>
+
+            </div>
+            <div class="modal-footer center">
+                <button type="submit" class="btn btn-primary btn-lg" onclick="return jindu(form)">登录</button>
+            </div>
+            <div class="right">
+                <a href="regist.html">立即注册&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+            </div>
+            <br/>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 轮播广告 -->
+<div id="banner_tabs" class="flexslider">
+    <ul class="slides">
+        <li>
+            <a title="" target="_blank" href="#">
+                <img width="100%" height="100%" alt="" style="background: url(images/rabiit1.gif) no-repeat center;" src="images/alpha.png">
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="100%" height="100%" alt="" style="background: url(images/heart1.gif) no-repeat center;" src="images/alpha.png">
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="100%" height="100%" alt="" style="background: url(images/love1.gif) no-repeat center;" src="images/alpha.png">
+            </a>
+        </li>
+    </ul>
+
+    <ul class="flex-direction-nav">
+        <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+        <li><a class="flex-next" href="javascript:;">Next</a></li>
+    </ul>
+    <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+        <li><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>2</a></li>
+    </ol>
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/slider.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var bannerSlider = new Slider($('#banner_tabs'), {
+            time: 5000,
+            delay: 400,
+            event: 'hover',
+            auto: true,
+            mode: 'fade',
+            controller: $('#bannerCtrl'),
+            activeControllerCls: 'active'
+        });
+        $('#banner_tabs .flex-prev').click(function() {
+            bannerSlider.prev()
+        });
+        $('#banner_tabs .flex-next').click(function() {
+            bannerSlider.next()
+        });
+    })
+</script>
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+    <p>电话：18288337788&nbsp;&nbsp;&nbsp;&nbsp;邮箱：78543333@163.com</p>
+    <p>©2015 微聊</p>
+    <p>地址：京城88号</p>
+</div>
+
+
+<script language="javascript">
+    function chkinput(form){
+        if(form.username.value==""){
+            alert("用户名或密码不能为空!");
+            form.username.focus();
+            return false;
+        }
+        if(form.pass.value==""){
+            alert("用户名或密码不能为空!");
+            form.pass.focus();
+            return false;
+        }
+        //return true;        //提交表单
+
+    }
+    function jindu(form){
+
+    }
+</script>
+</body>
+</html>
